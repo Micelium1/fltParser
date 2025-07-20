@@ -1,0 +1,1 @@
+код написан в рамках тестового задания и использует консоль для работы </br>пример работы:<img width="1219" height="512" alt="image" src="https://github.com/user-attachments/assets/8a3becba-1967-4124-aa31-9eca891b7352" />
