@@ -183,6 +183,8 @@ private:
         face.header = header;
         file.read(reinterpret_cast<char*>(&face) + sizeof(RecordHeader),
             sizeof(face) - sizeof(RecordHeader));
+        face.colorNameIndex = swap_endian(face.colorNameIndex);
+        face.materialIndex = swap_endian(face.materialIndex);
         string info = string(face.id) + " (Material Index: " +
             to_string(face.materialIndex) +" (Color Index : " +
             to_string(face.colorNameIndex) +")";
